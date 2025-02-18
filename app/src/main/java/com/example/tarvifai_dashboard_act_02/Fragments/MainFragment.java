@@ -47,7 +47,6 @@ public class MainFragment extends Fragment {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
         horizontalRecyclerView = rootView.findViewById(R.id.horizontal_recyclerView);
         namesRecyclerView = rootView.findViewById(R.id.horizontal_recyclerView_2);
         viewPager = rootView.findViewById(R.id.viewPager);
@@ -96,7 +95,7 @@ public class MainFragment extends Fragment {
         itemList.add(new Items(R.drawable.slide1, "Alice"));
         itemList.add(new Items(R.drawable.slide4, "Alice"));
 
-        horizontalAdapterImage = new horizontalAdapterImage(itemList);
+        horizontalAdapterImage = new horizontalAdapterImage(getContext(),itemList);
         horizontalRecyclerView.setAdapter(horizontalAdapterImage);
 
         namesAdapterHorizontal = new NamesAdapterHorizontal(names);

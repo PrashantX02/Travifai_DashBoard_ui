@@ -7,6 +7,7 @@
     <color name="grey">#EBFBFCFF</color>
     <color name="org_light">#FF9C82</color>
     <color name="black_light">#505050</color>
+
     <color name="org_black_light">#d0c4cd</color>
     <color name="palm_purple">#B88CEB</color>
     <color name="palm_purple_dark">#AA3DFD</color>
@@ -20,4 +21,5 @@
     <color name="secondary">#FF4081</color>
     <color name="secondary_light">#FF80AB</color>
 
+>>>>>>> f91b974 (ui update)
 </resources>

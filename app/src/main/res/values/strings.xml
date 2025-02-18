@@ -2,6 +2,8 @@
     <string name="app_name">Tarvifai_DashBoard_act_02</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="line">_____________________________________________________________________________________________________</string>
     <string name="about_short">If you want to live in a world full of luxuries then Roys Luxury is perfect choice for you. Escape to a world of relaxation at Roy\'s Luxury Hotel, where...</string>
+
 </resources>

@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.tarvifai_dashboard_act_02.Activity.DashBoard;
+
 import com.example.tarvifai_dashboard_act_02.Adapters.HotelsAdapter;
 import com.example.tarvifai_dashboard_act_02.Models.Hotels_model;
 import com.example.tarvifai_dashboard_act_02.R;
@@ -37,6 +37,9 @@ public class Hotels extends Fragment {
 
         // Initialize the hotel list
         hotelList = new ArrayList<>();
+
+        // setting up adapter
+        hotelsAdapter = new HotelsAdapter(getContext(),hotelList);
         hotelList.add(new Hotels_model(R.drawable.room));
         hotelList.add(new Hotels_model(R.drawable.room));
         hotelList.add(new Hotels_model(R.drawable.room));

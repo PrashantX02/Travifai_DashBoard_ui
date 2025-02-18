@@ -25,4 +25,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Tarvifai_DashBoard_act_02"
 include(":app")
-include(":library")

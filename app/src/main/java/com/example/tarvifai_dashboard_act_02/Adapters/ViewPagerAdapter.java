@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.tarvifai_dashboard_act_02.Fragments.Hotels;
+import com.example.tarvifai_dashboard_act_02.Fragments.villa;
 
 public  class ViewPagerAdapter extends FragmentPagerAdapter {
 
@@ -17,7 +18,7 @@ public  class ViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new Hotels();
             case 1:
-                return new Hotels();
+                return new villa();
             default:
                 return new Hotels();
         }

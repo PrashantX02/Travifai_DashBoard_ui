@@ -1,5 +1,7 @@
 package com.example.tarvifai_dashboard_act_02.Adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.example.tarvifai_dashboard_act_02.Activity.review_activity;
 import com.example.tarvifai_dashboard_act_02.Models.Items;
 import com.example.tarvifai_dashboard_act_02.R;
 
@@ -17,7 +21,8 @@ import java.util.List;
 public class horizontalAdapterImage extends RecyclerView.Adapter<horizontalAdapterImage.ImageViewHolder> {
 
     private List<Items> itemList;
-    public horizontalAdapterImage(List<Items> itemList) {
+    private Context context;
+    public horizontalAdapterImage(Context context,List<Items> itemList) {
         this.itemList = itemList;
     }
 
@@ -34,6 +39,12 @@ public class horizontalAdapterImage extends RecyclerView.Adapter<horizontalAdapt
         Items item = itemList.get(position);
         holder.imageView.setImageResource(item.getImageResId());
         holder.nameTextView.setText(item.getName());
+
+        holder.imageView.setOnClickListener((v)->{
+            Intent intent  = new Intent(holder.itemView.getContext() , review_activity.class);
+            holder.itemView.getContext() .startActivity(intent);
+           Animatoo.INSTANCE.animateSlideLeft(holder.itemView.getContext() );
+        });
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.example.tarvifai_dashboard_act_02.Adapters;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +29,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
     @Override
     public void onBindViewHolder(ImageViewHolder holder, int position) {
         holder.imageView.setImageResource(imageList.get(position));
+
     }
 
     @Override

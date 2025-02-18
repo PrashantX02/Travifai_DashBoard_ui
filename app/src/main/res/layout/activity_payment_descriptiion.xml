@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_4sdp"
+    android:backgroundTint="@color/grey_blue"
+    android:background="@color/grey_blue"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.payment_descriptiion">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_width="match_parent"
+               android:layout_marginStart="@dimen/_20sdp"
+               android:layout_height="match_parent">
+
+               <ImageView
+                   android:layout_width="@dimen/_20sdp"
+                   android:layout_height="@dimen/_20sdp"
+                   android:rotation="180"
+                   android:src="@drawable/arrow"/>
+
+               <Space
+                   android:layout_width="@dimen/_8sdp"
+                   android:layout_height="match_parent"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:gravity="start|center"
+                   android:text = "CART"
+                   android:textSize="14sp"/>
+
+           </LinearLayout>
+
+           <Space
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_10sdp"/>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constraintLayout5"
+                   android:layout_width="@dimen/_275sdp"
+                   android:layout_height="@dimen/_200sdp"
+                   android:background="@drawable/backgroudg4"
+
+                   android:padding="@dimen/_4sdp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent">
+
+                   <TextView
+                       android:id="@+id/textView36"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="@dimen/_13sdp"
+                       android:layout_marginTop="@dimen/_8sdp"
+                       android:text="Rooms"
+                       android:textColor="@color/black"
+                       android:textSize="16sp"
+                       android:textStyle="bold"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cardView6"
+                       android:layout_width="@dimen/_80sdp"
+                       android:layout_height="@dimen/_80sdp"
+                       android:layout_marginTop="@dimen/_3sdp"
+                       app:cardCornerRadius="@dimen/_10sdp"
+                       app:cardElevation="@dimen/_4sdp"
+                       app:layout_constraintStart_toStartOf="@+id/textView36"
+                       app:layout_constraintTop_toBottomOf="@+id/textView36">
+
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/room" />
+
+                   </androidx.cardview.widget.CardView>
+
+                   <TextView
+                       android:id="@+id/textView37"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="@dimen/_8sdp"
+                       android:text="Hilton Goa Resort"
+                       android:textColor="@color/black"
+                       android:textSize="15sp"
+                       android:textStyle="bold"
+                       app:layout_constraintStart_toEndOf="@+id/cardView6"
+                       app:layout_constraintTop_toTopOf="@+id/cardView6" />
+
+                   <TextView
+                       android:id="@+id/textView38"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_4sdp"
+                       android:text="2 Guest/ 1 room"
+                       android:textColor="@color/black_light"
+                       android:textSize="10sp"
+                       app:layout_constraintStart_toStartOf="@+id/textView37"
+                       app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cardView7"
+                       android:backgroundTint="@color/white"
+                       android:background="@color/white"
+                       android:layout_width="@dimen/_80sdp"
+                       android:layout_height="@dimen/_20sdp"
+                       android:layout_marginTop="@dimen/_4sdp"
+                       app:layout_constraintStart_toStartOf="@+id/textView38"
+                       app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                           <ImageView
+                               android:layout_width="@dimen/_20sdp"
+                               android:layout_height="match_parent"
+                               android:padding="@dimen/_4sdp"
+                               android:src="@drawable/calendar" />
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:gravity="center"
+                               android:padding="@dimen/_5sdp"
+                               android:text="22 Dec - 23 Dec"
+                               android:textColor="@color/black"
+                               android:textSize="9sp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <TextView
+                       android:id="@+id/button"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="@dimen/_10sdp"
+                       android:background="@drawable/purple_button_background"
+                       android:padding="@dimen/_5sdp"
+                       android:paddingTop="@dimen/_5sdp"
+                       android:paddingBottom="@dimen/_10sdp"
+                       android:text="Rs 150000/-"
+                       android:textColor="@color/white"
+                       android:textSize="12sp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="@+id/cardView6"
+                       app:layout_constraintStart_toEndOf="@+id/cardView7" />
+
+                   <TextView
+                       android:id="@+id/textView39"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:text="EDIT"
+                       android:textColor="@color/black_light"
+                       android:textSize="11sp"
+                       app:layout_constraintStart_toStartOf="@+id/cardView6"
+                       app:layout_constraintTop_toBottomOf="@+id/button" />
+
+                   <TextView
+                       android:id="@+id/textView42"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="@dimen/_30sdp"
+                       android:text="REMOVE"
+                       android:textColor="@color/black_light"
+                       android:textSize="11sp"
+                       app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                       app:layout_constraintStart_toEndOf="@+id/textView39"
+                       app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+                   <TextView
+                       android:id="@+id/textView40"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="MOVE TO WISHLIST"
+                       android:textColor="@color/black_light"
+                       android:textSize="11sp"
+                       app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                       app:layout_constraintEnd_toEndOf="@+id/button"
+                       app:layout_constraintTop_toTopOf="@+id/textView39"
+                       app:layout_constraintVertical_bias="1.0" />
+
+                   <TextView
+                       android:id="@+id/textView41"
+                       android:layout_width="@dimen/_242sdp"
+                       android:layout_height="@dimen/_15sdp"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:gravity="center"
+                       android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+                       app:layout_constraintEnd_toEndOf="@+id/textView40"
+                       app:layout_constraintStart_toStartOf="@+id/textView39"
+                       app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                   <TextView
+                       android:id="@+id/textView43"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="@dimen/_4sdp"
+                       android:text="BOOK MORE ROOMS"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintStart_toStartOf="@+id/textView41"
+                       app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+                   <TextView
+                       android:id="@+id/textView44"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginEnd="@dimen/_10sdp"
+                       android:gravity="center"
+                       android:text="+"
+                       android:textColor="@color/black"
+                       android:textSize="20sp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="@+id/textView43"
+                       app:layout_constraintEnd_toEndOf="@+id/textView41"
+                       app:layout_constraintTop_toBottomOf="@+id/textView41" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constraintLayout6"
+                   android:layout_width="@dimen/_270sdp"
+                   android:layout_height="@dimen/_200sdp"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:backgroundTint="@color/white"
+                   android:background="@drawable/background_with_purple_stroke"
+                   android:padding="@dimen/_4sdp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+                   <TextView
+                       android:id="@+id/textView45"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_18sdp"
+                       android:gravity="center"
+                       android:text="Choose Your Stay Plan\n(No cancellation charges apply)"
+                       android:textSize="14sp"
+                       android:textStyle="bold"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <LinearLayout
+                       android:id="@+id/linearLayout2"
+                       android:layout_width="@dimen/_105sdp"
+                       android:layout_height="@dimen/_40sdp"
+                       android:layout_marginStart="@dimen/_19sdp"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:background="@drawable/purple_button_background"
+                       android:orientation="horizontal"
+                       android:paddingBottom="@dimen/_3sdp"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/textView45">
+
+                       <ImageView
+                           android:layout_width="@dimen/_10sdp"
+                           android:layout_height="@dimen/_10sdp"
+                           android:layout_gravity="center"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:src="@drawable/backgroudg4" />
+
+                       <TextView
+                           android:id="@+id/c1_text"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:layout_marginTop="@dimen/_4sdp"
+                           android:layout_marginEnd="@dimen/_5sdp"
+                           android:gravity="center"
+                           android:text="European Plan\n(Room only)"
+                           android:textColor="@color/white"
+                           android:textSize="9sp"
+                           android:textStyle="bold"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/linearLayout3"
+                       android:layout_width="@dimen/_105sdp"
+                       android:layout_height="@dimen/_40sdp"
+                       android:layout_marginTop="@dimen/_20sdp"
+                       android:background="@drawable/purple_button_background"
+                       android:orientation="horizontal"
+                       android:paddingBottom="@dimen/_3sdp"
+                       app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                       app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                       app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                       <ImageView
+                           android:layout_width="@dimen/_10sdp"
+                           android:layout_height="@dimen/_10sdp"
+                           android:layout_gravity="center"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:src="@drawable/backgroudg4" />
+
+                       <TextView
+                           android:id="@+id/c3_text"
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:layout_marginTop="@dimen/_4sdp"
+                           android:layout_marginEnd="@dimen/_5sdp"
+                           android:gravity="center"
+                           android:padding="@dimen/_2sdp"
+                           android:text="Modified American Plan\n(Room + 2 Meals)"
+                           android:textColor="@color/white"
+                           android:textSize="9sp"
+                           android:textStyle="bold"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:id="@+id/linearLayout4"
+                       android:layout_width="@dimen/_105sdp"
+                       android:layout_height="@dimen/_40sdp"
+                       android:layout_marginStart="@dimen/_15sdp"
+                       android:background="@drawable/purple_button_background"
+                       android:orientation="horizontal"
+                       android:paddingBottom="@dimen/_3sdp"
+                       app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+                       app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+                       app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+                       <ImageView
+                           android:layout_width="@dimen/_10sdp"
+                           android:layout_height="@dimen/_10sdp"
+                           android:layout_gravity="center"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:src="@drawable/backgroudg4" />
+
+                       <TextView
+                           android:id="@+id/c2_text"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:layout_marginTop="@dimen/_4sdp"
+                           android:layout_marginEnd="@dimen/_5sdp"
+                           android:gravity="center"
+                           android:text="Continental\n(Room and Breakfast)"
+                           android:textColor="@color/white"
+                           android:textSize="9sp"
+                           android:textStyle="bold"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="@dimen/_105sdp"
+                       android:layout_height="@dimen/_40sdp"
+                       android:background="@drawable/purple_button_background"
+                       android:orientation="horizontal"
+                       android:paddingBottom="@dimen/_3sdp"
+                       app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                       app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+                       app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+                       app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+                       <ImageView
+                           android:layout_width="@dimen/_10sdp"
+                           android:layout_height="@dimen/_10sdp"
+                           android:layout_gravity="center"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:src="@drawable/backgroudg4" />
+
+                       <TextView
+                           android:id="@+id/c4_text"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:layout_marginTop="@dimen/_4sdp"
+                           android:layout_marginEnd="@dimen/_5sdp"
+                           android:gravity="center"
+                           android:text="American Plan\n(Room + 3 Meals)"
+                           android:textColor="@color/white"
+                           android:textSize="9sp"
+                           android:textStyle="bold"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/cardView8"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@color/white"
+                   android:backgroundTint="@color/white"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   app:cardCornerRadius="@dimen/_10sdp"
+                   app:cardElevation="@dimen/_2sdp"
+                   app:cardUseCompatPadding="true"
+                   app:layout_constraintEnd_toEndOf="@+id/constraintLayout6"
+                   app:layout_constraintStart_toStartOf="@+id/constraintLayout6"
+                   app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginStart="@dimen/_5sdp"
+                       android:orientation="vertical"
+                       android:padding="@dimen/_20sdp">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Property Rules and Information"
+                           android:textSize="15sp"
+                           android:textStyle="bold" />
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/_50sdp"
+                           android:layout_marginTop="@dimen/_7sdp"
+                           android:background="@drawable/background_with_purple_stroke"
+                           android:orientation="vertical"
+                           android:padding="@dimen/_10sdp">
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/_1sdp"
+                               android:text="Couple Bechlore Rules"
+                               android:textColor="@color/themed_purple" />
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Unmarried Couple /guests with Local IDs , are allowed"
+                               android:textColor="@color/black_light"
+                               android:textSize="11sp" />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="•"
+                               android:textColor="@color/themed_purple"
+                               android:textSize="@dimen/_30sdp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_marginStart="@dimen/_5sdp"
+                               android:gravity="center|start"
+                               android:text="Primary guest should be atleast 18 years of age."
+                               android:textSize="11sp" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="•"
+                               android:textColor="@color/themed_purple"
+                               android:textSize="@dimen/_30sdp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_marginStart="@dimen/_5sdp"
+                               android:gravity="center|start"
+                               android:text="Passports, Aadhar and Driving License are accepeted as IS proof(s)"
+                               android:textSize="11sp" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="•"
+                               android:textColor="@color/themed_purple"
+                               android:textSize="@dimen/_30sdp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_marginStart="@dimen/_5sdp"
+                               android:gravity="center|start"
+                               android:text="Pets are not allowed."
+                               android:textSize="11sp" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="•"
+                               android:textColor="@color/themed_purple"
+                               android:textSize="@dimen/_30sdp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_marginStart="@dimen/_5sdp"
+                               android:layout_marginTop="@dimen/_1sdp"
+                               android:gravity="center|start"
+                               android:text="Optional : Early check-in is avaliable for a free (subject to avaliabilty) A late check-out fee will be Charged | Rollaway bed fee :INR 1000.0 per day."
+                               android:textSize="11sp" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/_10sdp">
+
+                           <TextView
+                               android:layout_width="@dimen/_227sdp"
+                               android:layout_height="match_parent"
+                               android:gravity="center|start"
+                               android:text="Guest Profile"
+                               android:textColor="@color/themed_purple"
+                               android:textSize="14sp" />
+
+                           <ImageView
+                               android:layout_width="@dimen/_8sdp"
+                               android:layout_height="@dimen/_20sdp"
+                               android:src="@drawable/arrow" />
+                       </LinearLayout>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/_3sdp"
+                           android:text="View More"
+                           android:layout_marginStart="@dimen/_1sdp"
+                           android:textColor="@color/black"
+                           android:textSize="13sp" />
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:id="@+id/textView46"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_25sdp"
+                   android:text="PROMO CODE:"
+                   android:layout_marginStart="@dimen/_25sdp"
+                   android:textColor="@color/black"
+                   android:textSize="12sp"
+                   android:textStyle="bold"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/cardView9"
+                   android:layout_width="@dimen/_253sdp"
+                   android:layout_height="@dimen/_50sdp"
+                   android:layout_marginTop="@dimen/_5sdp"
+                   android:background="@color/white"
+                   android:backgroundTint="@color/white"
+                   app:cardCornerRadius="@dimen/_10sdp"
+                   app:cardElevation="@dimen/_1sdp"
+                   app:layout_constraintEnd_toEndOf="@+id/cardView8"
+
+                   app:layout_constraintStart_toStartOf="@+id/cardView8"
+                   app:layout_constraintTop_toBottomOf="@+id/textView46">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:padding="@dimen/_10sdp">
+
+                       <ImageView
+                           android:layout_width="@dimen/_20sdp"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/discount_voucher" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:gravity="center"
+                           android:padding="@dimen/_5sdp"
+                           android:text="Apply Coupon"
+                           android:textColor="@color/black"
+                           android:textSize="16sp" />
+
+                       <Space
+                           android:layout_width="@dimen/_100sdp"
+                           android:layout_height="match_parent" />
+
+                       <ImageView
+                           android:layout_width="@dimen/_12sdp"
+                           android:layout_height="match_parent"
+                           android:gravity="center|end"
+                           android:src="@drawable/arrow" />
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:id="@+id/cardView10"
+                   android:layout_width="@dimen/_253sdp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:background="@color/white"
+                   android:backgroundTint="@color/white"
+                   app:cardCornerRadius="@dimen/_10sdp"
+                   app:cardElevation="@dimen/_1sdp"
+                   app:layout_constraintEnd_toEndOf="@+id/cardView9"
+                   app:layout_constraintStart_toStartOf="@+id/cardView9"
+                   app:layout_constraintTop_toBottomOf="@+id/cardView9">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:padding="@dimen/_5sdp">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="@dimen/_5sdp"
+                           android:text="PAYMENT DETAILS"
+                           android:textColor="@color/black"
+                           android:textSize="12sp"
+                           android:textStyle="bold" />
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/_5sdp"
+                               android:text="Total Cost:"
+                               android:textColor="@color/black_light"
+                               android:textSize="11sp" />
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:gravity="end"
+                               android:padding="@dimen/_5sdp"
+                               android:text="$20"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/_5sdp"
+                               android:text="Shipping Fee"
+                               android:textColor="@color/black_light"
+                               android:textSize="11sp" />
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:gravity="end"
+                               android:padding="@dimen/_5sdp"
+                               android:text="$02"
+                               android:textColor="@color/black"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/_5sdp"
+                               android:text="Additional Discount"
+                               android:textColor="@color/black_light"
+                               android:textSize="11sp" />
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:gravity="end"
+                               android:padding="@dimen/_5sdp"
+                               android:text="-$06"
+                               android:textColor="@color/secondary"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+
+                       </LinearLayout>
+
+                       <TextView
+                           android:layout_width="@dimen/_240sdp"
+                           android:layout_height="@dimen/_15sdp"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:text="______________________________________________________________________________________"
+                           android:textColor="@color/black_light"
+                           android:textSize="8sp" />
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:padding="@dimen/_5sdp"
+                               android:text="Total Ammount"
+                               android:textColor="@color/secondary"
+                               android:textSize="11sp" />
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:gravity="end"
+                               android:padding="@dimen/_5sdp"
+                               android:text="$25"
+                               android:textColor="@color/secondary"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <TextView
+                   android:id="@+id/textView47"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:alpha="0.5"
+                   android:fontFamily="@font/roboto1"
+                   android:text="*Price shown includes of all Applicable taxes, fees and subjects to Availability."
+                   android:textColor="@color/black_light"
+                   android:textSize="13sp"
+                   app:layout_constraintEnd_toEndOf="@+id/cardView10"
+                   app:layout_constraintStart_toStartOf="@+id/cardView10"
+                   app:layout_constraintTop_toBottomOf="@+id/cardView10" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_50sdp"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:background="@color/white"
+                   android:backgroundTint="@color/white"
+                   android:padding="@dimen/_10sdp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/textView47">
+
+
+                   <TextView
+                       android:id="@+id/textView48"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+
+                       android:alpha="0.7"
+                       android:text="TO BE PAID"
+                       android:textColor="@color/black_light"
+                       android:textSize="12sp"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_1sdp"
+                       android:alpha="0.7"
+                       android:text="Rs 15,000/-"
+                       android:textColor="@color/black"
+                       android:textSize="14sp"
+                       android:textStyle="bold"
+                       app:layout_constraintStart_toStartOf="@+id/textView48"
+                       app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/_40sdp"
+                       android:background="@drawable/themed_background"
+                       android:orientation="horizontal"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintTop_toTopOf="parent">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:layout_marginStart="@dimen/_2sdp"
+                           android:gravity="center"
+                           android:padding="@dimen/_5sdp"
+                           android:text="CHECKOUT"
+                           android:textColor="@color/white"
+                           android:textSize="12sp"
+                           android:textStyle="bold" />
+
+                       <ImageView
+                           android:layout_width="20sp"
+                           android:layout_height="match_parent"
+                           android:layout_marginEnd="@dimen/_1sdp"
+                           android:src="@drawable/ic_arrow_right" />
+                   </LinearLayout>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+       </LinearLayout>
+
+</ScrollView>

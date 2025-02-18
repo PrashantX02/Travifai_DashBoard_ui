@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    tools:context=".Activity.view_hotel"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:context=".Activity.view_hotel">
+
+                <ImageView
+                    android:id="@+id/background_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_300sdp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/view_hotel" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_200sdp"
+                    android:background="@drawable/constraint_layout_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hilton Goa Resort"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="@+id/textView49"
+                        app:layout_constraintTop_toBottomOf="@+id/textView49">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:src="@drawable/star" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/gmap"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintStart_toEndOf="@+id/textView57"
+                        app:layout_constraintTop_toBottomOf="@+id/hotel_short_description"
+                        app:srcCompat="@drawable/gmap" />
+
+                    <TextView
+                        android:id="@+id/hotel_short_description"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Luxury Suites and Rooms Overlooking Goa Resort"
+                        android:textColor="@color/black_light"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView49"
+                        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_light"
+                        android:text="Goa"
+                        app:layout_constraintStart_toEndOf="@+id/gmap"
+                        app:layout_constraintTop_toTopOf="@+id/gmap" />
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Photos"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout5"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                        app:layout_constraintTop_toTopOf="@+id/linearLayout5" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Videos"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView52"
+                        app:layout_constraintStart_toEndOf="@+id/textView52"
+                        app:layout_constraintTop_toTopOf="@+id/textView52" />
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="Rooms"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+                        app:layout_constraintStart_toEndOf="@+id/textView53"
+                        app:layout_constraintTop_toTopOf="@+id/textView53" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_3sdp"
+                        android:background="@drawable/purple_button_background"
+                        app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+                        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/button_background_blue"
+                        app:layout_constraintStart_toStartOf="@+id/hotel_short_description"
+                        app:layout_constraintTop_toTopOf="@+id/gmap">
+
+                        <Space
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="4.5"
+                            android:textSize="11sp"
+                            android:textColor="@color/white"
+                            android:layout_width="@dimen/_20sdp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"/>
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/star"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView56"
+                        android:textSize="11sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Excellent"
+                        android:textStyle="bold"
+                        android:textColor="@color/themed_purple"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+                        app:layout_constraintTop_toTopOf="@+id/linearLayout6" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:textSize="11sp"
+
+                        android:text="(346 Ratings)"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView56"
+                        app:layout_constraintStart_toEndOf="@+id/textView56"
+                        app:layout_constraintTop_toTopOf="@+id/textView56" />
+
+                    <TextView
+                        android:id="@+id/textView58"
+                        android:layout_width="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="@color/themed_purple"
+                        android:layout_height="wrap_content"
+                        android:text="view on map"
+                        app:layout_constraintStart_toStartOf="@+id/textView51"
+                        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="@dimen/_260sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:textColor="@color/black_light"
+                        android:textSize="11sp"
+                        android:alpha="0.5"
+                        android:text="@string/line"
+                        app:layout_constraintEnd_toEndOf="@+id/textView58"
+                        app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+                        app:layout_constraintTop_toBottomOf="@+id/gmap" />
+
+                    <TextView
+                        android:id="@+id/textView60"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Travel Dates and Guests"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView59"
+                        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Calendar"
+                        android:textSize="14sp"
+                        android:textColor="@color/themed_purple"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_42sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView60"
+                        app:layout_constraintStart_toEndOf="@+id/textView60"
+                        app:layout_constraintTop_toTopOf="@+id/textView60" />
+
+                    <TextView
+                        android:id="@+id/textView62"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_3sdp"
+                        android:background="@drawable/purple_button_background"
+                        app:layout_constraintStart_toStartOf="@+id/textView60"
+                        app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout7"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:background="@drawable/background_with_light_blackstroke"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="@+id/textView62"
+                        app:layout_constraintTop_toBottomOf="@+id/textView62">
+
+                        <Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Check-in:"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="match_parent"
+                            android:gravity="center|end"
+                            android:text="3:00 PM"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout9"
+                        android:layout_width="wrap_content"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@drawable/background_with_light_blackstroke"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout7"
+                        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+                        app:layout_constraintTop_toTopOf="@+id/linearLayout7">
+
+                        <Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Check-out:"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="match_parent"
+                            android:gravity="center|end"
+                            android:text="3:00 PM"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout8"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/background_with_light_blackstroke"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                        <Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:src="@drawable/calendar"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="22 Dec - 23 Dec"
+                            android:textColor="@color/themed_purple"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout10"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/background_with_light_blackstroke"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout8"
+                        app:layout_constraintStart_toStartOf="@+id/linearLayout9"
+                        app:layout_constraintTop_toTopOf="@+id/linearLayout8">
+
+                        <Space
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:src="@drawable/sleeping"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="2 Guest/1 Room"
+                            android:textColor="@color/themed_purple"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@color/white"
+                        style="@style/CustomTabStyle2"
+                        app:layout_constraintEnd_toEndOf="@+id/textView59"
+                        app:layout_constraintStart_toStartOf="@+id/textView59"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="@color/themed_purple"
+                        app:tabMode="scrollable">
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="About" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amenities" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Room Type" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Map and Nearby" />
+
+                        <com.google.android.material.tabs.TabItem
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Itinerary" />
+                    </com.google.android.material.tabs.TabLayout>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_210sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tabLayout2"
+                        app:layout_constraintStart_toStartOf="@+id/tabLayout2"
+                        app:layout_constraintTop_toBottomOf="@+id/tabLayout2" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/viewPager2"
+                        app:layout_constraintStart_toStartOf="@+id/viewPager2"
+                        app:layout_constraintTop_toBottomOf="@+id/viewPager2" >
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Strating from"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:text="Rs 15000/"
+                            android:textColor="@color/themed_purple"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView50"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                        <TextView
+                            android:id="@+id/textView64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" night"
+                            android:textColor="@color/black"
+                            android:textSize="9sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView63"
+                            app:layout_constraintStart_toEndOf="@+id/textView63"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                        <TextView
+                            android:id="@+id/textView65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="8sp"
+                            android:text="+786 taxes and fees"
+                            app:layout_constraintStart_toStartOf="@+id/textView63"
+                            app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+                        <TextView
+                            android:id="@+id/button2"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            android:background="@drawable/themed_background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Room"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+</ScrollView>

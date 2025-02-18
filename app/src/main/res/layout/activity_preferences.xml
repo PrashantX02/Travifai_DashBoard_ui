@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.preferences">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="20dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:fontFamily="@font/lilitaone_regular"
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferences"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/roboto2"
+        android:padding="@dimen/_10sdp"
+        android:text="What describes you best,\nselect your preferences..."
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+    <LinearLayout
+        android:id="@+id/item_1"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/black_shade_storke_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/textView74"
+        app:layout_constraintStart_toStartOf="@+id/textView74"
+        app:layout_constraintTop_toBottomOf="@+id/textView76">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/food" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Food Blogger"
+            android:textColor="@color/black_light"
+            android:textSize="13sp" />
+
+        <Space
+            android:layout_width="@dimen/_93sdp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/shade_light_circle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/item_2"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/black_shade_storke_rounded"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="@+id/item_1"
+        app:layout_constraintStart_toStartOf="@+id/item_1"
+        app:layout_constraintTop_toBottomOf="@+id/item_1">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/food"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/black_light"
+            android:text="Food Blogger"/>
+        <Space
+            android:layout_width="@dimen/_93sdp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shade_light_circle"
+            android:padding="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/item_3"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/black_shade_storke_rounded"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="@+id/item_2"
+        app:layout_constraintStart_toStartOf="@+id/item_2"
+        app:layout_constraintTop_toBottomOf="@+id/item_2">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/food"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/black_light"
+            android:text="Food Blogger"/>
+        <Space
+            android:layout_width="@dimen/_93sdp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shade_light_circle"
+            android:padding="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/item_4"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/black_shade_storke_rounded"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="@+id/item_3"
+        app:layout_constraintStart_toStartOf="@+id/item_3"
+        app:layout_constraintTop_toBottomOf="@+id/item_3">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/food"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/black_light"
+            android:text="Food Blogger"/>
+        <Space
+            android:layout_width="@dimen/_93sdp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shade_light_circle"
+            android:padding="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/item_5"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/black_shade_storke_rounded"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="@+id/item_4"
+        app:layout_constraintStart_toStartOf="@+id/item_4"
+        app:layout_constraintTop_toBottomOf="@+id/item_4">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/food"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/black_light"
+            android:text="Food Blogger"/>
+        <Space
+            android:layout_width="@dimen/_93sdp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shade_light_circle"
+            android:padding="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/item_6"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/black_shade_storke_rounded"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="@+id/item_5"
+        app:layout_constraintStart_toStartOf="@+id/item_5"
+        app:layout_constraintTop_toBottomOf="@+id/item_5">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/food"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/black_light"
+            android:text="Food Blogger"/>
+        <Space
+            android:layout_width="@dimen/_93sdp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shade_light_circle"
+            android:padding="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/black_shade_storke_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/item_6"
+        app:layout_constraintStart_toStartOf="@+id/item_6"
+        app:layout_constraintTop_toBottomOf="@+id/item_6">
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/food" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Food Blogger"
+            android:textColor="@color/black_light"
+            android:textSize="13sp" />
+
+        <Space
+            android:layout_width="@dimen/_93sdp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/shade_light_circle" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:text="Explore on your own"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:src="@drawable/right_arrow_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout12"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

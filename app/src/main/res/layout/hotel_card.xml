@@ -6,9 +6,9 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/hotel_card"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_135sdp"
+        android:id="@+id/hotel_card"
         android:backgroundTint="@color/white"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

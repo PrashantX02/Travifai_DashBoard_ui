@@ -23,41 +23,44 @@ public class HotelsAdapter extends RecyclerView.Adapter<HotelsAdapter.HotelViewH
 
     private List<Hotels_model> hotelList;
     private Context context;
-    public HotelsAdapter(Context context,List<Hotels_model> hotelList) {
-        this.context = context;
-        this.hotelList = hotelList;
+
+
+    public HotelsAdapter(Context context, List < Hotels_model > hotelList) {
+            this.context = context;
+            this.hotelList = hotelList;
     }
 
-    @NonNull
-    @Override
-    public HotelViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.hotel_card, parent, false);
-        return new HotelViewHolder(view);
-    }
+        @NonNull
+        @Override
+        public HotelViewHolder onCreateViewHolder (@NonNull ViewGroup parent,int viewType){
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.hotel_card, parent, false);
+            return new HotelViewHolder(view);
+        }
 
-    @Override
-    public void onBindViewHolder(@NonNull HotelViewHolder holder, int position) {
-        Hotels_model hotel = hotelList.get(position);
-        holder.hotelImage.setImageResource(hotel.getHotel());
-        holder.cardView.setOnClickListener((v)->{
-            Intent intent = new Intent(context, view_hotel.class);
-            context.startActivity(intent);
-            Animatoo.INSTANCE.animateSlideLeft(context);
-        });
-    }
+        @Override
+        public void onBindViewHolder (@NonNull HotelViewHolder holder,int position){
+            Hotels_model hotel = hotelList.get(position);
+            holder.hotelImage.setImageResource(hotel.getHotel());
+            holder.cardView.setOnClickListener((v) -> {
+                Intent intent = new Intent(context, view_hotel.class);
+                context.startActivity(intent);
+                Animatoo.INSTANCE.animateSlideLeft(context);
+            });
+        }
 
-    @Override
-    public int getItemCount() {
-        return hotelList.size();
-    }
+        @Override
+        public int getItemCount () {
+            return hotelList.size();
+        }
 
-    public static class HotelViewHolder extends RecyclerView.ViewHolder {
-        private ImageView hotelImage;
-        private CardView cardView;
-        public HotelViewHolder(View itemView) {
-            super(itemView);
-            cardView = itemView.findViewById(R.id.hotel_card);
-            hotelImage = itemView.findViewById(R.id.imageView2);
+        public static class HotelViewHolder extends RecyclerView.ViewHolder {
+            private ImageView hotelImage;
+            private CardView cardView;
+
+            public HotelViewHolder(View itemView) {
+                super(itemView);
+                cardView = itemView.findViewById(R.id.hotel_card);
+                hotelImage = itemView.findViewById(R.id.imageView2);
+            }
         }
     }
-}
